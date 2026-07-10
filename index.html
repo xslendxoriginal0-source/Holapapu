@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Copa Mundial — Simulador</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="topbar-brand">
+      <span class="brand-mark">⚽</span>
+      <span class="brand-name">COPA MUNDIAL <span class="brand-sub">SIMULADOR</span></span>
+    </div>
+    <nav class="topbar-nav" id="mainNav">
+      <button class="nav-btn active" data-view="menu">Menú</button>
+      <button class="nav-btn" data-view="confederaciones">Confederaciones</button>
+      <button class="nav-btn" data-view="globales">Estadísticas Globales</button>
+      <button class="nav-btn" id="repechajeNavBtn" data-view="repechaje" disabled>Repechaje 🔒</button>
+      <button class="nav-btn" id="worldCupNavBtn" data-view="mundial" disabled>Mundial 🔒</button>
+      <button class="nav-btn" data-view="campeones">Campeones</button>
+    </nav>
+  </header>
+
+  <main id="app">
+    <!-- Las vistas se inyectan aquí desde ui.js -->
+  </main>
+
+  <footer class="footer">
+    <span id="fechaGlobalLabel">Fecha global: 0</span>
+    <button class="btn-primary" id="avanzarFechaBtn" style="padding:6px 14px;font-size:12px;">Avanzar Fecha ▶</button>
+    <span id="sedeLabel">Sede: por sortear</span>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/simulation.js"></script>
+  <script src="js/standings.js"></script>
+  <script src="js/worldcup.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
